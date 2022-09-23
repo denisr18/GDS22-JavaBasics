@@ -2,6 +2,11 @@ import java.util.Arrays;
 
 public class MyFirstClass {
 
+    /**
+     * ich bin ein javadoc Kommentar
+     * @param args Parameter für den Programmaufruf
+     */
+
     //Wir haben unsere erste Klasse erzeugt
     //psvm
     public static void main(String[] args) {
