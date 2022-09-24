@@ -11,5 +11,7 @@ public class UnäreOperationen {
 
         System.out.println("++b");
         System.out.println(++b); // Ich erwarte mir 3
+
+
     }
 }
