@@ -1,24 +1,43 @@
 public class ArithmetischeOperationen {
+    private static int a;
+    private static int b;
+    private static float result;
 
-    static void addiere(int summand1, int summand2){
-        System.out.println("Die Summe ist: " + (summand1 + summand2));
+    public ArithmetischeOperationen(){
+        a = 9;
+        b = 7;
     }
-    static void subtrahiere(int minuent1, int minuent2){
-        System.out.println("Die Differenz ist: " + (minuent1 - minuent2));
+
+    public static void addiere(){
+        result = a + b;
+        System.out.println("Die Summe ist: " + result);
     }
-    static void multipliziere(int Faktor1, int Faktor2){
-        System.out.println("Das Ergebnis ist: " + (Faktor1 * Faktor2));
+    public static void subtrahiere(){
+        result = a - b;
+        System.out.println("Die Differenz ist: " + result);
     }
-    static void dividiere(int Quotient, int Dividend){
-        System.out.println("Das Ergebnis ist: " + (Quotient / Dividend));
+    public static void multipliziere(){
+        result = a * b;
+        System.out.println("Die Multiplikation ist: " + result);
+    }
+    public static void dividiere(){
+        result = a / b;
+        System.out.println("Die Division ist: " + result);
+    }
+    public static void modulo(){
+        result = a % b;
+        System.out.println("Das Ergebnis ist: " + result);
     }
 
     public static void main(String[] args) {
 
-        addiere(4,7);
-        subtrahiere(4,7);
-        multipliziere(4,7);
-        dividiere(4,7);
+        ArithmetischeOperationen A1 = new ArithmetischeOperationen();
+
+        ArithmetischeOperationen.addiere();
+        ArithmetischeOperationen.subtrahiere();
+        ArithmetischeOperationen.multipliziere();
+        ArithmetischeOperationen.dividiere();
+        ArithmetischeOperationen.modulo();
 
     }
 }
